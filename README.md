@@ -1,0 +1,1 @@
+# solstice-digital-signage-example
