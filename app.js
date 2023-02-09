@@ -28,9 +28,6 @@ const comLogo = document.getElementById('companyLogo')
 const displayURL = document.getElementById(`podUrl`)
 const timeDisplay = document.getElementById(`time`)
 const welcome = document.querySelector('.welcomeText')
-const qrCode = document.querySelector('.overlay')
-const mainContainer = document.querySelector('.mainContainer')
-const flash = document.querySelector('.flash')
 const podIP = 'localhost'
 
 comLogo.setAttribute('src', `./icons/${companyLogo}`)
