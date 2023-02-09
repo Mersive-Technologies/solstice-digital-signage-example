@@ -16,7 +16,8 @@ p {
 span {
   display: inline;
   font-style: normal;
-  font-weight: 500;
+  font-family: Lato;
+  font-weight: 300;
   margin: 0;
   height: 3.3vmin;
   font-size: 4.0vmin;
