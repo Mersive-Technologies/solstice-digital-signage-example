@@ -99,6 +99,7 @@ span {
   position: absolute;
   visibility: visible;
   z-index: 100;
+  font-weight: 300;
   top: 0;
   right: 0;
   margin: 6vmin 5vmin 0 0;
