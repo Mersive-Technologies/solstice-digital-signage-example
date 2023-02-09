@@ -1,0 +1,159 @@
+
+body {
+  position: absolute;
+  width: 100%;
+  font-family: Lato;
+  color: #FFFFFF;
+}
+p {
+  display: inline;
+  font-style: normal;
+  font-weight: 100;
+  margin: 0;
+  height: 3.3vmin;
+  font-size: 4.0vmin;
+  line-height: 3.3vmin;
+}
+span {
+  display: inline;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  height: 3.3vmin;
+  font-size: 4.0vmin;
+  line-height: 3.3vmin;
+}
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+  cursor: pointer;
+}
+.flash {
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 200;
+}
+.mainContainer {
+  visibility: visible;
+}
+.mainContent {
+  z-index: 100;
+  margin: 9vmin 0 0 4vmin;
+}
+.display {
+  position: relative;
+  visibility: visible;
+  z-index: 100;
+  height: 10vmin;
+}
+.displayText {
+  font-size: 10vmin;
+}
+.connectOptions {
+  font-size: 72px;
+  line-height: 72px;
+}
+.compShare {
+  margin-bottom: 3vmin;
+}
+.connectGrid {
+  display: grid;
+  grid-row: auto;
+  row-gap: 1vmin;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.3vmin;
+}
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  height: 3.3vmin;
+}
+.icon {
+  margin: 0 1vmin .5vmin 0;
+  max-height: 3vmin;
+  width: auto;
+  height: auto;
+}
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 3vmin;
+  margin-right: 9vmin;
+}
+.welcomeText {
+  margin: auto 0 3.5vmin 3.5vmin;
+  font-size: 6vmin;
+  line-height: 6vmin;
+}
+.logo {
+  margin-right: 3.5vmin;
+  max-height: 9vmin;
+  width: auto;
+  height: auto;
+}
+.backgroundPlacement {
+  position: fixed;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.backgroundShadow{
+  z-index: -2;
+}
+.qrCode {
+  display: flex;
+  flex-direction: column;
+  bottom: 10vmin;
+  left: 4vmin;
+  padding-bottom: 3vmin;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25vmin;
+}
+.qrImage {
+  width:400px;
+  height: 400px;
+}
+.qrText {
+  text-align: center;
+  line-height: 8vmin;
+  width: 100vmin;
+  margin-bottom: 3vmin;
+}
+.qrText > p {
+  font-size: 8vmin;
+}
+#time {
+  position: absolute;
+  visibility: visible;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  margin: 6vmin 5vmin 0 0;
+}
+#backgroundVideo {
+  z-index: -1;
+}
+#backgroundImage {
+  z-index: -3;
+}
