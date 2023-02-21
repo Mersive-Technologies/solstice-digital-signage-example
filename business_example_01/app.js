@@ -31,6 +31,7 @@ const welcome = document.querySelector('.welcomeText')
 const podIP = 'localhost'
 
 comLogo.setAttribute('src', `./icons/${companyLogo}`)
+backgroundImage.setAttribute('src', `./img/${backgroundArray[0]}`)
 
 function getToken() {
   const tokenRequest = new XMLHttpRequest()
@@ -83,7 +84,9 @@ function changeBackground() {
   }
   setTimeout(changeBackground, backgroundChangeTimer)
 }
-setTimeout(changeBackground, backgroundChangeTimer)
+if(backgroundArray.length > 1){
+  setTimeout(changeBackground, backgroundChangeTimer)
+}
 
 function getPodData() {
   // request pod config

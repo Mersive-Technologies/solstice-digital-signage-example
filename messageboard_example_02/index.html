@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="locale">
+      <p class="podTime" id="time"></p>
+      <p class="podDate" id="date"></p>
+    </div>
+    <div class="school">
+      <p id="companyName">Summerfield School</p>
+    </div>
+  </div>
+  <div class="main">
+    <div class="leftMain">
+      <div class="leftHeader">
+        <p>This week's events</p>
+      </div>
+      <div class="leftFeed">
+      </div>
+    </div>
+    <div class="rightMain">
+      <div class="rightHeader">
+        <p>Here to pick up your child?</p>
+        <p>Scan here to let us know!</p>
+      </div>
+      <div class="qrCode">
+        <img src="./images/QRCode.png" alt="" srcset="">
+      </div>
+      <div class="rightFooter">
+        <p>Enter <span class="screenKey" id="sessionKey"></span> in the Sosltice app to present to this display.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="feed" id="listContainer">
+      <ul class="scrollingList" id="scrollingList">
+        <!-- <li class="list_item">School News: Summerfield will be closed on 7 September</li>
+        <li class="list_item">Make sure to check in when arriving to pick up your child</li>
+        <li class="list_item">New Student Orientation is today at 8:00 a.m.</li>
+        <li class="list_item">Use the Solstice app to share to this display</li> -->
+      </ul>
+    </div>
+    <div class="mersive">
+      <img src="./images/mersiveFooter.png">
+    </div>
+  </div>
+  <script src="./app.js" />
+</body>
+</html>

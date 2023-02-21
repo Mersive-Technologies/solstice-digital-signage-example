@@ -1,0 +1,222 @@
+body {
+  position: absolute;
+  font-family: 'Tuffy';
+  margin: 0;
+  background: linear-gradient(288.19deg, #C0B6AC -1.39%, #F4F3F1 104.53%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 12.6vmin;
+}
+.locale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 400;
+  color: #DD3838;
+  text-align: left;
+  margin: 0 0 0 3vmin;
+}
+.podTime {
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  font-size: 3.5vmin;
+  margin: 0;
+}
+.podDate {
+  font-size: 30px;
+  width: 100%;
+  margin: 0;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+.school{
+  margin: -6vmin 5vmin 0 0;
+  font-family: 'Viga';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8vmin;
+  text-align: center;
+  color: #DD3838;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main {
+  flex: auto;
+  background: linear-gradient(288.19deg, #882323 -1.39%, #F53D3D 104.53%);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 0px 0px 10px black;
+  border-bottom: 10px solid #FFFFFF;
+  border-top: 10px solid #FFFFFF;
+}
+.leftMain {
+  flex: 1;
+  margin: 0 3vmin;
+}
+.rightMain {
+  width: 35%;
+  background: linear-gradient(180deg, rgba(94, 40, 136, 0.5) 15.71%, rgba(94, 40, 136, 0.1) 131.59%);
+  margin: 0 1.5vmin 3vmin 1.5vmin;
+  padding: 0 12vmin;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.rightFooter {
+  color:#FFFFFF;
+  margin-top: 10vmin;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+}
+.leftHeader, .rightHeader {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5vmin;
+  line-height: 7vmin;
+}
+.leftHeader > p {
+  margin: 1vmin 0 5vmin 0;
+}
+.rightHeader > p:first-child {
+  margin: 8vmin 0 0 0;
+}
+.rightHeader > p:nth-child(2) {
+  margin: 0 0 3vmin 0;
+}
+.qrCode > img {
+  height: auto;
+  width: auto;
+  min-height: 20vmin;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  height: 12.6vmin;
+}
+.feed {
+  flex: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.scrollingList {
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+}
+.list_item {
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8vmin;
+  color: #DD3838;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 1vmin;
+  text-align: center;
+  margin-left: 0;
+}
+.list_item:not(:first-child):before {
+  content: '|';
+  padding-right: 2vmin;
+}
+.mersive {
+  margin-right: 3vmin;
+  margin-left: 3vmin;
+  justify-content: right;
+}
+.feedItem {
+  display:grid;
+  grid-template-columns: 20px auto auto;
+  grid-template-rows: 20% 50% 30%;
+  height: 15vmin;
+  margin-bottom: 2vmin;
+}
+.detailBox {
+  position: relative;
+  background: #882828;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 4;
+}
+.date {
+  color: white;
+  margin: 0 0 0 2vmin;
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vmin;
+  line-height: 2.3vmin;
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+}
+.feedDetail {
+  margin: 1vmin 0 0 1vmin;
+  display: inline-block;
+}
+.bar {
+  display: inline-block;
+  border-left: .3vmin solid #ffffff;
+  height:60%;
+  margin: 0 0 0 3vmin;
+}
+.time {
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5vmin;
+  color: #ffffff;
+  margin: .3vmin 0 0 0;
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 3;
+}
+.title {
+  display: inline-block;
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vmin;
+  color: #ffffff;
+  border-right: .3vmin solid #ffffff;
+  padding: 0 1vmin 0 0;
+  margin: 0 1vmin 0 0;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.location {
+  display: inline-block;
+  padding: 0 1vmin;
+  background-color: #ffffff;
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vmin;
+  color: #DD3838;
+  border-radius: .7vmin;
+}
