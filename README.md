@@ -8,7 +8,7 @@ To deploy one of the examples:
 <br>1. First, copy all of the files from the respective example folder before making any changes. This will ensure you have a clean backup to revert to.
 <br>2. Then follow the recommended changes listed by example below.
 </p>
-<p>Also see the [Custom Welcome Screen documentation page to come](https://documentation.mersive.com/content/pages/admin-custom-welcome-screen.htm).
+<p>Also see the Custom Welcome Screen documentation page (to come) at https://documentation.mersive.com/content/pages/admin-custom-welcome-screen.htm.
 </p>
 
 ## <p style="text-align:center">Example 1 - Business Meeting Room</p>
