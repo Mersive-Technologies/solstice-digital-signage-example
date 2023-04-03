@@ -26,6 +26,7 @@ The Business Meeting Room example is a simple digital signage solution with cust
 <br>1. Replace and/or add images to img/ folder.
 <br>2. Add the names of all background images to be rorated through to the `backgroundArray` variable.
 </p>
+
 ![Array Example](./readme_images/array_example.png)
 
 
