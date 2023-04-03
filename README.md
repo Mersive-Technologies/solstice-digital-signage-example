@@ -1,6 +1,6 @@
 # Solstice Dyanamic Digital Signage Examples
 ## Repository Overview
-<p>In Solstice 5.5.2 and higher, Solstice digital signage functionality can be configured to display a customized welcome screen page when the Solstice display is not in use for content sharing. This repository contains examples of some ways this functionality can be used. See directions for using these examples to create dynamic digital signage with Solstice at https://documentation.mersive.com/content/pages/integration-dyanmic-digital-signage.htm.
+<p>In Solstice 5.5.2 and higher, Solstice digital signage functionality can be configured to display a customized welcome screen page when the Solstice display is not in use for content sharing. This repository contains examples of some ways this functionality can be used. See directions for using these examples to create dynamic digital signage with Solstice at https://documentation.mersive.com/content/pages/integration-dynamic-digital-signage.htm.
 </p>
 <p>
 Information is provided below about the examples provided in this repository. These examples are provided as is, and a strong understanding of HTML, CSS, JavaScript, graphics, and web server configuration is recommended for any significant modifications.
