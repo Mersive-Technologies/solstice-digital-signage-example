@@ -1,3 +1,4 @@
+// Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is
 // Please modify variables below to customize the digital signage screen
 // Enter pod password string below. If no admin password on the pod, leave empty string as is
 const podPassword = ''

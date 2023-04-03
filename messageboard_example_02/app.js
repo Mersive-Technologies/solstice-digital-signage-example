@@ -1,3 +1,4 @@
+// Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is
 // Change this variable to modify the name displayed in the upper right corner of the display
 const setName = 'Summerfield School'
 // Below is an array that controls the messages displayed in the feed on the left side of the screen.

@@ -7,10 +7,11 @@ Information is provided below about the examples provided in this repository. Th
 </p>
 
 ## Example 1 - Business Meeting Room
-![Business Example](./readme_images/business_example.png)
 <p>
 The Business Meeting Room example is a simple digital signage solution with custom imaging in the background to suit brand standards and directions for how to connect to the Solstice display for wireless content sharing.
 </p>
+
+![Business Example](./readme_images/business_example.png)
 
 <p>Files in this example:
 <br>- index.html - HTML file that references app.js and styles.css to create the page layout
@@ -21,19 +22,19 @@ The Business Meeting Room example is a simple digital signage solution with cust
 </p>
 
 ### Example background image array
-
 <p>To add background images to the array:
 <br>1. Replace and/or add images to img/ folder.
 <br>2. Add the names of all background images to be rorated through to the `backgroundArray` variable.
-![Array Example](./readme_images/array_example.png)
 </p>
+![Array Example](./readme_images/array_example.png)
 
 
 ## Example 2 - Message Board
-![Messageboard Example](./readme_images/messageboard_example.png)
 <p>
 The Message Board example displays a split screen with informational text messages on one side and a QR code with custom directions for connecting with the Solstice screen key on the other.
 </p>
+
+![Messageboard Example](./readme_images/messageboard_example.png)
 
 <p>Files in this example:
 <br>- index.html - HTML file that references app.js and styles.css to create the page layout
