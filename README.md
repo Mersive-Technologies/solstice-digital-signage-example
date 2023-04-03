@@ -1,49 +1,43 @@
-# <p style="text-align:center">Solstice Digital Signage Examples</p>
-## <p style="text-align:center">Overview</p>
-<p>
-Below are instructions for using the examples provided in this repository.
+# Solstice Dyanamic Digital Signage Examples
+## Repository Overview
+<p>In Solstice 5.5.2 and higher, Solstice digital signage functionality can be configured to display a customized welcome screen page when the Solstice display is not in use for content sharing. This repository contains examples of some ways this functionality can be used. See directions for using these examples to create dynamic digital signage with Solstice at https://documentation.mersive.com/content/pages/admin-dyanmic-digital-signage.htm.
 </p>
 <p>
-To deploy one of the examples:
-<br>1. First, copy all of the files from the respective example folder before making any changes. This will ensure you have a clean backup to revert to.
-<br>2. Then follow the recommended changes listed by example below.
-</p>
-<p>Also see the Custom Welcome Screen documentation page (to come) at https://documentation.mersive.com/content/pages/admin-custom-welcome-screen.htm.
+Information is provided below about the examples provided in this repository. These examples are provided as is, and a strong understanding of HTML, CSS, JavaScript, graphics, and web server configuration is recommended for any significant modifications.
 </p>
 
-## <p style="text-align:center">Example 1 - Business Meeting Room</p>
+## Example 1 - Business Meeting Room
 ![Business Example](./readme_images/business_example.png)
 <p>
-The Business Meeting Room example is a simple digital signage solution that allows for custom imaging in the background to suit brand standards and also preserves the configured directions for how to connect to the Solstice display for wireless sharing.
+The Business Meeting Room example is a simple digital signage solution with custom imaging in the background to suit brand standards and directions for how to connect to the Solstice display for wireless content sharing.
 </p>
 
-### Manage background images:
-**IMPORTANT NOTE: Do not delete or replace transparent_overlay.png**
-<p>
-The `app.js` web application has the functionality to change between multiple backgrounds at a time interval set by the moderator (admin configuring these files).
-<br>
-To set the time interval, you must change the variable inside the `app.js` file named `backgroundChangeTimer`. This is currently set to 60,000 milliseconds, which equals 1 minute. Reminder: every 1,000 milliseconds equals 1 second.<br>
-</p>
-<p>
-You can also replace or add to the included background images provided. To do this, you will want to add your images to the img folder.
-<br>
+<p>Files in this example:
+<br>- index.html - HTML file that references app.js and styles.css to create the page layout
+<br>- app.js - JavaScript programming with variables to interact with Solstice and change between multiple backgrounds at a time interval (example set to 60,000 milliseconds, or 1 minute)
+<br>- style.css - Cascading Style Sheet to define colors, spacing, and text attributes
+<br>- icons/ - folder for various icons and logos used in the example
+<br>- img/ - folder for background images used in example **IMPORTANT NOTE: Do not delete or replace transparent_overlay.png**
 </p>
 
-![Image Location](./readme_images/image_location.png)
-<br>
-<p>
-Once you have placed the desired images into the `img` folder, then add the file names to the `app.js`  file. This is done by modifying the `backgroundArray` variable. Ensure the array only contains the names of the files in the `img` folder that you would like to have displayed as the background.
-If you do not wish to have the background images change, simply include a single file name in the array. Below is an example image of the array.
-<br>
-</p>
+### Example background image array
 
+<p>To add background images to the array:
+<br>1. Replace and/or add images to img/ folder.
+<br>2. Add the names of all background images to be rorated through to the `backgroundArray` variable.
 ![Array Example](./readme_images/array_example.png)
-
-
-### Manage company logo:
-<p>
-
 </p>
 
-## <p style="text-align:center">Example 2 - Message Board</p>
+
+## Example 2 - Message Board
 ![Messageboard Example](./readme_images/messageboard_example.png)
+<p>
+The Message Board example displays a split screen with informational text messages on one side and a QR code with custom directions for connecting with the Solstice screen key on the other.
+</p>
+
+<p>Files in this example:
+<br>- index.html - HTML file that references app.js and styles.css to create the page layout
+<br>- app.js - JavaScript programming with ticker function and variables for Solstice display, organization, and messages
+<br>- style.css - Cascading Style Sheet to define colors, spacing, and text attributes
+<br>- images/ - folder for footer and QR code images
+</p>
