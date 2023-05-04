@@ -1,0 +1,61 @@
+<!-- Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//www-static.wework.com/apercu/apercu.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="./img/transparent_overlay.png" class="backgroundPlacement backgroundShadow" />
+
+  <video autoplay muted loop class="backgroundImage backgroundPlacement backgroundShadow">
+    <source src="./videos/flower.webm" type="video/webm">
+  </video>
+
+  <div class="mainContainer">
+    <p id="time"></p>
+    <div class="mainContent">
+      <div class="display">
+        <p class="displayText" id="podName" />
+      </div>
+      <div class="compShare">
+        <div class="connectGrid">
+          <p>Share on computer</p>
+        </div>
+        <div class="iconContainer" style="margin-bottom: 1.3vmin;">
+          <img class="icon" src="./icons/solstice.svg" />
+          <p>Solstice app</p>
+        </div>
+        <div class="iconContainer">
+          <p>Visit <span class="connect" id="podUrl"></span> in a browser</p>
+        </div>
+      </div>
+      <div class="connectGrid">
+        <div class="iconContainer">
+          <p class="bold">Phone or tablet</p>
+        </div>
+        <div class="iconContainer">
+          <img class="icon" src="./icons/solstice.svg" />
+          <p>Solstice app</p>
+        </div>
+        <div class="iconContainer">
+          <img class="icon" src="./icons/apple.svg" />
+          <p>Airplay</p>
+        </div>
+        <div class="iconContainer">
+          <img class="icon" src="./icons/android.svg" />
+          <p>Miracast</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="welcomeText"></p>
+      <img class="logo" id="companyLogo" src="">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
