@@ -1,4 +1,4 @@
-/* Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is */
+/* Copyright (c) Mersive Technologies, Inc. 2023 - Example provided as is */
 body {
   position: absolute;
   font-family: 'Tuffy';
@@ -85,11 +85,11 @@ body {
 }
 .rightFooter {
   color:#FFFFFF;
-  margin-top: 10vmin;
+  margin-top: 3vmin;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 25px;
+  line-height: 10px;
 }
 .leftHeader, .rightHeader {
   color: #FFFFFF;
@@ -220,4 +220,15 @@ body {
   font-size: 2vmin;
   color: #DD3838;
   border-radius: .7vmin;
+}
+
+.connect {
+  color: yellow;
+  font-size: 30px;
+  line-height: 10px;
+}
+.screenKey {
+  color: orange;
+  font-size: 30px;
+  line-height: 10px;
 }
