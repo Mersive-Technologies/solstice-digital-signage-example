@@ -1,18 +1,20 @@
-// Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is
+// Copyright (c) Mersive Technologies, Inc. 2023 - example provided as is -
 // Please modify variables below to customize the digital signage screen
-// Enter pod password string below. If no admin password on the pod, leave empty string as is
+
+// Enter Pod admin password in podPassword string below. Example, if admin password is 12345, enter '12345'
+// If no admin password is set on the Pod, leave empty inside single quotes '' as shown below.
+// If podPassword does not match password set on the Pod, variables such as the Pod's IP or Screen Key will not be visible.
 const podPassword = ''
 
-// Please add the file name for each image inside the img folder you would like to include as part of the array below
-// Please ensure the image files are stored inside the img folder and you enter the names correctly inside single quotes ''
-// EXAMPLE
+// Add the file name for each image inside the img folder you would like to include as part of the backgroundArray array.
+// Please ensure the image files are stored inside the img folder, enter exact file names inside single quotes ''
 const backgroundArray = ['background_01.jpg','background_02.jpg','background_03.jpg']
 
-// Replace this SVG file name with your company logo SVG. Please ensure company SVG is in the icons folder
+// Replace SVG file pointed to by companyLogo with your company logo SVG. Ensure company SVG file is added in the icons folder
 const companyLogo = 'company_logo.svg'
 
 // Set the amount of time between background image changes
-// This is in milliseconds. Every 1000 is one second
+// Time intervals are in milliseconds. Every 1000 is equal to one second
 const backgroundChangeTimer = 60000
 
 
@@ -20,16 +22,20 @@ const backgroundChangeTimer = 60000
 ############################################################
 ********** DO NOT CHANGE ANYTHING BELOW THIS LINE **********
 ############################################################
-************ Unless you know what you are doing ************
+************ Unless you are comfortable coding *************
 ############################################################
 */
+
 const displayName = document.getElementById(`podName`)
-const backgroundImage = document.getElementById('backgroundImage')
-const comLogo = document.getElementById('companyLogo')
 const displayURL = document.getElementById(`podUrl`)
+const displayScreenKey = document.getElementById(`podKey`)
 const timeDisplay = document.getElementById(`time`)
 const welcome = document.querySelector('.welcomeText')
-const podIP = 'localhost'
+const backgroundImage = document.getElementById('backgroundImage')
+const comLogo = document.getElementById('companyLogo')
+
+// The podIP should not be unique, it should either be set to '127.0.0.1' or 'localhost'
+const podIP = '127.0.0.1'
 
 comLogo.setAttribute('src', `./icons/${companyLogo}`)
 backgroundImage.setAttribute('src', `./img/${backgroundArray[0]}`)
@@ -75,6 +81,19 @@ function parseCalendar(token, curPodTime) {
   }
 }
 
+function refreshKey() {
+    fetch(`https://${podIP}/api/config`)
+      .then((response) => response.json())
+      .then((data) => {
+        podKey = data.m_authenticationCuration.sessionKey
+        document.getElementById('sessionKey').innerHTML = podKey || 'next'
+      })
+      .catch((e) => {
+        console.log('something went wrong')
+      })
+  }
+  setInterval(refreshKey, 3000)
+
 function changeBackground() {
   const curBackground = backgroundImage.getAttribute('src').split('/').at(-1)
   const curIndex = backgroundArray.indexOf(curBackground)
@@ -90,7 +109,6 @@ if(backgroundArray.length > 1){
 }
 
 function getPodData() {
-  // request pod config
   const token = getToken()
   const timeStamp = getCurTime()
   timeDisplay.innerText = timeStamp
@@ -111,6 +129,8 @@ function getPodData() {
     .then(data => {
       const displayURLText = data.m_displayInformation.m_ipv4
       displayURL.innerText = displayURLText
+	  const ScreenKeyText = data.m_authenticationCuration.sessionKey
+      displayScreenKey.innerText = ScreenKeyText
     })
     .catch(e => {
       console.log(e)
@@ -126,5 +146,4 @@ function getPodData() {
   }
   setTimeout(getPodData, 15000)
 }
-
 getPodData()

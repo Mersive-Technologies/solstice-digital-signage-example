@@ -1,4 +1,4 @@
-<!-- Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is -->
+<!-- Copyright (c) Mersive Technologies, Inc. 2023 - Example provided as is -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,24 +33,27 @@
       <div class="qrCode">
         <img src="./images/QRCode.png" alt="" srcset="">
       </div>
-      <div class="rightFooter">
-        <p>Enter <span class="screenKey" id="sessionKey"></span> in the Sosltice app to present to this display.</p>
+	  <div class="rightFooter">
+	    <font size="4">
+		<p>Share to this display from your Laptop</p>
+		<p>First, connect to the school network</p>
+		</font>
+		<font size="6">
+		<p>Go to https://<b>share.mersive.com</b></p>
+		</font>
+		<p>Enter display address <span class="connect" id="podUrl"></span></p>
+		<p>Enter the screen key <span class="screenKey" id="podKey"></span> when prompted</p>
       </div>
     </div>
   </div>
   <div class="footer">
     <div class="feed" id="listContainer">
-      <ul class="scrollingList" id="scrollingList">
-        <!-- <li class="list_item">School News: Summerfield will be closed on 7 September</li>
-        <li class="list_item">Make sure to check in when arriving to pick up your child</li>
-        <li class="list_item">New Student Orientation is today at 8:00 a.m.</li>
-        <li class="list_item">Use the Solstice app to share to this display</li> -->
-      </ul>
+      <ul class="scrollingList" id="scrollingList"></ul>
     </div>
     <div class="mersive">
       <img src="./images/mersiveFooter.png">
     </div>
   </div>
-  <script src="./app.js" />
+  <script src="./app.js"></script>
 </body>
 </html>
