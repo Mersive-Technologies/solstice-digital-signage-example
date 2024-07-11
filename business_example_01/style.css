@@ -1,4 +1,4 @@
-/* Copyright (c) Mersive Technologies, Inc. 20203 - example provided as is */
+/* Copyright (c) Mersive Technologies, Inc. 2023 - Example provided as is */
 body {
   position: absolute;
   width: 100%;
@@ -57,7 +57,7 @@ span {
 .iconContainer {
   display: flex;
   flex-direction: row;
-  height: 3.3vmin;
+  height: 4vmin;
 }
 .icon {
   margin: 0 1vmin .5vmin 0;
@@ -93,8 +93,19 @@ span {
   top: 0;
   left: 0;
 }
-.backgroundShadow{
+.backgroundShadow {
   z-index: -2;
+}
+.connect {
+  color: yellow;
+  font-size: 40px;
+  line-height: 10px;
+}
+.screenKey {
+  color: yellow;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 10px;
 }
 #time {
   position: absolute;
