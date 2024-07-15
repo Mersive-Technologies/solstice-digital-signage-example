@@ -11,6 +11,8 @@ Information is provided below about the examples provided in this repository. Th
 The Business Meeting Room example is a simple digital signage solution with custom imaging in the background to suit brand standards and directions for how to connect to the Solstice display for wireless content sharing.
 </p>
 
+![Business Example](./readme_images/business_example.png)
+
 <p>Files in this example:
 <br>- index.html - HTML file that references app.js and styles.css to create the page layout
 <br>- app.js - JavaScript programming with variables to interact with Solstice and change between multiple backgrounds at a time interval (example set to 60,000 milliseconds, or 1 minute)
