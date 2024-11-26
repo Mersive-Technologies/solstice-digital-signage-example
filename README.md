@@ -24,7 +24,7 @@ The Business Meeting Room example is a simple digital signage solution with cust
 ### Example background image array
 <p>To add background images to the array:
 <br>1. Replace and/or add images to img/ folder.
-<br>2. Add the names of all background images to be rorated through to the `backgroundArray` variable.
+<br>2. Add the names of all background images to be rotated through to the `backgroundArray` variable.
 </p>
 
 ![Array Example](./readme_images/array_example.png)
